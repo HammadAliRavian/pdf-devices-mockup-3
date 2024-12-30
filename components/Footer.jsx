@@ -89,27 +89,47 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="col-span-1">
-            <Link href="/" className="flex items-center space-x-3 group">
-              <div className="relative w-10 h-10">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary-600 to-primary-500 rounded-xl group-hover:shadow-lg group-hover:shadow-primary-500/25 transition-all duration-300"></div>
+          <Link
+            href="/"
+            className="inline-flex items-center space-x-3 mb-6 group"
+          >
+            <div className="relative">
+              <div className="relative flex items-center justify-center w-12 h-12">
+                {/* Background Shape */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
+                {/* Logo Icon */}
                 <svg
-                  className="relative w-full h-full p-2 text-white transform group-hover:scale-110 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
+                  className="relative w-7 h-7 text-white transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300"
                   viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    d="M7 3C5.34315 3 4 4.34315 4 6V18C4 19.6569 5.34315 21 7 21H17C18.6569 21 20 19.6569 20 18V8.82843C20 8.03278 19.6839 7.26972 19.1213 6.70711L16.2929 3.87868C15.7303 3.31607 14.9672 3 14.1716 3H7Z"
+                    className="fill-current"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7 14.5V16.5H17V14.5H7ZM7 10.5V12.5H17V10.5H7ZM7 6.5V8.5H11V6.5H7Z"
+                    fill="white"
+                    fillOpacity="0.85"
                   />
                 </svg>
+                {/* Decorative Elements */}
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary-300 rounded-full blur group-hover:blur-md transition-all duration-300"></div>
+                <div className="absolute -bottom-0.5 -left-0.5 w-2 h-2 bg-primary-300 rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                PDFDevices
+            </div>
+            <div className="flex flex-col -space-y-0.5">
+              <span className="text-2xl font-extrabold tracking-tight text-secondary-800">
+                PDF<span className="text-primary-600">Devices</span>
               </span>
-            </Link>
+              <span className="text-[10px] text-secondary-400 tracking-widest font-semibold">
+                DOCUMENT TOOLS
+              </span>
+            </div>
+          </Link>
             <p className="mt-4 text-gray-600 text-sm leading-relaxed">
               Professional PDF tools to help you work smarter. Convert,
               compress, and edit PDFs with ease.
