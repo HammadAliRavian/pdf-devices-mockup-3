@@ -767,37 +767,6 @@ const HomePage = () => {
                   </motion.div>
                 </div>
               </motion.section>
-
-              {/* Newsletter Section */}
-              <div className="bg-gradient-to-br from-gray-50 via-gray-50 to-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-                  <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-                    <div className="text-center lg:text-left w-full lg:max-w-xl">
-                      <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-                        Subscribe to our newsletter
-                      </h3>
-                      <p className="text-base sm:text-lg text-gray-600">
-                        Get the latest updates, tips, and special offers
-                        delivered directly to your inbox.
-                      </p>
-                    </div>
-                    <form className="flex flex-col sm:flex-row w-full lg:max-w-md gap-3">
-                      <input
-                        type="email"
-                        placeholder="Enter your email"
-                        className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 w-full"
-                        required
-                      />
-                      <button
-                        type="submit"
-                        className="w-full sm:w-auto px-6 py-3 bg-primary-600 text-white font-medium rounded-xl hover:bg-primary-700 shadow-sm hover:shadow-md hover:shadow-primary-500/10 transition-all duration-200 transform hover:-translate-y-0.5 whitespace-nowrap"
-                      >
-                        Subscribe
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
