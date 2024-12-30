@@ -53,83 +53,52 @@ const Footer = () => {
       variants={fadeIn}
       className="bg-white border-t border-gray-100"
     >
-      {/* Newsletter Section */}
-      <div className="bg-gradient-to-br from-gray-50 via-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="text-center lg:text-left max-w-xl">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-                Subscribe to our newsletter
-              </h3>
-              <p className="text-gray-600">
-                Get the latest updates, tips, and special offers delivered
-                directly to your inbox.
-              </p>
-            </div>
-            <form className="flex w-full max-w-md gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200"
-                required
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-primary-600 text-white font-medium rounded-xl hover:bg-primary-700 shadow-sm hover:shadow-md hover:shadow-primary-500/10 transition-all duration-200 transform hover:-translate-y-0.5"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="col-span-1">
-          <Link
-            href="/"
-            className="inline-flex items-center space-x-3 mb-6 group"
-          >
-            <div className="relative">
-              <div className="relative flex items-center justify-center w-12 h-12">
-                {/* Background Shape */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
-                {/* Logo Icon */}
-                <svg
-                  className="relative w-7 h-7 text-white transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 3C5.34315 3 4 4.34315 4 6V18C4 19.6569 5.34315 21 7 21H17C18.6569 21 20 19.6569 20 18V8.82843C20 8.03278 19.6839 7.26972 19.1213 6.70711L16.2929 3.87868C15.7303 3.31607 14.9672 3 14.1716 3H7Z"
-                    className="fill-current"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M7 14.5V16.5H17V14.5H7ZM7 10.5V12.5H17V10.5H7ZM7 6.5V8.5H11V6.5H7Z"
-                    fill="white"
-                    fillOpacity="0.85"
-                  />
-                </svg>
-                {/* Decorative Elements */}
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary-300 rounded-full blur group-hover:blur-md transition-all duration-300"></div>
-                <div className="absolute -bottom-0.5 -left-0.5 w-2 h-2 bg-primary-300 rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
+            <Link
+              href="/"
+              className="inline-flex items-center space-x-3 mb-6 group"
+            >
+              <div className="relative">
+                <div className="relative flex items-center justify-center w-12 h-12">
+                  {/* Background Shape */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
+                  {/* Logo Icon */}
+                  <svg
+                    className="relative w-7 h-7 text-white transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 3C5.34315 3 4 4.34315 4 6V18C4 19.6569 5.34315 21 7 21H17C18.6569 21 20 19.6569 20 18V8.82843C20 8.03278 19.6839 7.26972 19.1213 6.70711L16.2929 3.87868C15.7303 3.31607 14.9672 3 14.1716 3H7Z"
+                      className="fill-current"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7 14.5V16.5H17V14.5H7ZM7 10.5V12.5H17V10.5H7ZM7 6.5V8.5H11V6.5H7Z"
+                      fill="white"
+                      fillOpacity="0.85"
+                    />
+                  </svg>
+                  {/* Decorative Elements */}
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary-300 rounded-full blur group-hover:blur-md transition-all duration-300"></div>
+                  <div className="absolute -bottom-0.5 -left-0.5 w-2 h-2 bg-primary-300 rounded-full blur-sm group-hover:blur-md transition-all duration-300"></div>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col -space-y-0.5">
-              <span className="text-2xl font-extrabold tracking-tight text-secondary-800">
-                PDF<span className="text-primary-600">Devices</span>
-              </span>
-              <span className="text-[10px] text-secondary-400 tracking-widest font-semibold">
-                DOCUMENT TOOLS
-              </span>
-            </div>
-          </Link>
+              <div className="flex flex-col -space-y-0.5">
+                <span className="text-2xl font-extrabold tracking-tight text-secondary-800">
+                  PDF<span className="text-primary-600">Devices</span>
+                </span>
+                <span className="text-[10px] text-secondary-400 tracking-widest font-semibold">
+                  DOCUMENT TOOLS
+                </span>
+              </div>
+            </Link>
             <p className="mt-4 text-gray-600 text-sm leading-relaxed">
               Professional PDF tools to help you work smarter. Convert,
               compress, and edit PDFs with ease.
